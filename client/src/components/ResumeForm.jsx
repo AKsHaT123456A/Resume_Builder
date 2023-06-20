@@ -15,6 +15,7 @@ const ResumeForm = () => {
     name: dataStorage.name || "",
     position: dataStorage.position || "",
     linkedin: dataStorage.linkedin || "",
+    github: dataStorage.github || "",
     positions: dataStorage.positions || [
       { position: "", duration: "", company: "" },
     ],
@@ -73,6 +74,7 @@ const ResumeForm = () => {
       name: data.name,
       position: data.position,
       linkedin: data.linkedin,
+      github:data.github,
       positions: data.positions,
       objective,
       jobResponsibilities,
@@ -159,6 +161,16 @@ const ResumeForm = () => {
             label={"LinkedIn URL"}
             name="linkedin"
             value={data.linkedin}
+            className="block relative font-body mt-2 mb-[5px] text-[14px]"
+            onChange={handleChange}
+            placeholder={"https://linkedin.com/username"}
+            optional={true}
+            type="url"
+          />
+          <CustomInput
+            label={"GitHub URL"}
+            name="github"
+            value={data.github}
             className="block relative font-body mt-2 mb-[5px] text-[14px]"
             onChange={handleChange}
             placeholder={"https://linkedin.com/username"}

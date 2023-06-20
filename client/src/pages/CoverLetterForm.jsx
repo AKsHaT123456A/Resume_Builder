@@ -23,7 +23,6 @@ const CoverLetterForm = () => {
   const handleCopy = () => {
     navigator.clipboard.writeText(coverLetter);
     toast.info("Cover letter has been copied");
-    console.log(coverLetter)
   };
   return (
     <div className="flex flex-wrap font-body my-10 max-w-[90%] md:w-[80%] mx-auto mt-40 justify-between items-center">

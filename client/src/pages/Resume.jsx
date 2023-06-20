@@ -40,6 +40,14 @@ const Resume = () => {
           >
             Linkedin
           </a>
+          <a
+            href={dataStorage.github}
+            target="_blank"
+            rel="noreferrer "
+            className="text-cyan-500 underline"
+          >
+            GitHub
+          </a>
         </div>
         <ResumeHead text={"Bio"} />
         <p className="">{dataStorage.objective}</p>
