@@ -2,14 +2,14 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import ResumeForm from "../components/ResumeForm";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 const Home = () => {
   const navigate = useNavigate();
   const [start, setStart] = useState(false);
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="bg-gray-800 max-w-[1800px] mx-auto font-body justify-around px-[15px] lg:px-[100px] flex-wrap flex items-center h-screen text-white">
         {!start && (
           <div className="animate-topslide lg:py-16 ">
