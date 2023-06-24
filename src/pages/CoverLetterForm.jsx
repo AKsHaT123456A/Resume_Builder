@@ -15,6 +15,7 @@ const CoverLetterForm = () => {
       const result = await getData(prompt);
       setCoverLetter(result);
       setLoading(false);
+      toast.success("Kindly,click on the copy button!")
     } catch (err) {
       toast.error("Something went wrong");
       setLoading(false);
