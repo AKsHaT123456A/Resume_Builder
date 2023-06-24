@@ -6,7 +6,6 @@ const DEFAULT_PARAMS = {
   frequency_penalty: 0,
   presence_penalty: 0,
 };
-console.log(String(import.meta.env.VITE_REACT_APP_GPT_KEY));
 export async function getData(params = "") {
   const params_ = { ...DEFAULT_PARAMS, prompt: params };
   const requestOptions = {
